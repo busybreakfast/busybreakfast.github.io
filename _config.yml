@@ -8,7 +8,7 @@ github: [metadata]
 logo: true 
 paginate_path: "page:num"
 timezone: CZ
-domain_name: 'http://yuriy.eu'
+domain_name: 'https://busybreakfast.github.io'
 baseurl:
 plugins:
   - jekyll-feed
@@ -17,8 +17,6 @@ collections:
  breakfasts:
   output: true
 
-# Details for the RSS feed generator
-url:            'http://yuriy.eu'
 author:         'Yuriy Shiryaev'
 twitter: 'yuriysteam'
 
