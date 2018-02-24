@@ -31,9 +31,15 @@ logo: true
 
 <h1 class="intro">This week breakfasts</h1>
 	
-	<div class="selector">All recipes / Shopping list</div>
+	<ul class="tabs">
+		<li class="tab-link current" data-tab="tab-1">All recipes</li>
+		<li class="tab-link" data-tab="tab-2">Shopping list</li>
+	</ul>
+		
+	
 
-<div class="breakfasts-grid">
+<div id="tab-1" class="tab-content current">
+	<div class="breakfasts-grid tabbed-section-1 visible">
     {% assign items = site.breakfasts | sort: 'date' %}
   {% for item in items %}
         
@@ -45,9 +51,21 @@ logo: true
             </div>  
         </a>
   {% endfor %}
-	
-	
-
     </div>
+</div>
+
+<div id="tab-2" class="tab-content">
+	
+	<div class="shoppinglist">
+		
+		{% for shoppinglist_item in site.data.shoppinglist %}
+		
+		<div class="item">
+			<div class="item_name">{{ shoppinglist_item.name }}</div>
+			<div class="item_amount">{{ shoppinglist_item.amount }}</div>
+		</div>
+		{% endfor %}
+	
+	</div>
 	
 </div>

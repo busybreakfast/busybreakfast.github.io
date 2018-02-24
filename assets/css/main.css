@@ -60,6 +60,7 @@ html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -381,17 +382,6 @@ display:block;
    2. Recepies
    ========================================================================== */
 
-.selector {
-	font-family: "CircularBold";
-	font-size: 13px;
-	color: #313131;
-	letter-spacing: 0;
-	text-transform: uppercase;
-	text-align: center;
-	margin: 30px auto 30px;
-	
-}
-
 .breakfasts-grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -446,9 +436,95 @@ letter-spacing: 0;
 line-height: 20px;
 }
 
+
+ul.tabs{
+	font-size: 13px;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 30px auto 20px;	
+	padding: 0;
+	list-style: none;
+	
+	
+		}
+ul.tabs li{
+	background: none;
+	color: #464646;
+	/* Ingredients: */
+	font-family: "CircularBook";
+	color: #6C6C6C;
+	letter-spacing: 0;
+	display: inline-block;
+	padding: 10px 35px;
+	margin-left: -3px;
+	cursor: pointer;
+	border-bottom: 2px solid #D7D7D7;
+	
+		}
+
+ul.tabs li:hover{
+	border-bottom: 2px solid #b2b2b2;
+	color: #4e4e4e;
+	
+		}
+
+
+ul.tabs li.current{
+	border-bottom: 2px solid #313131;
+	font-family: "CircularBold";
+	color: #313131;
+	padding: 9px 35px;
+	
+	
+		}
+
+.tab-content{
+	display: none;
+	padding: 15px;
+		}
+
+.tab-content.current{
+	display: inherit;
+		}
+
+
+.shoppinglist {
+	width: 60%;
+	margin: 0 auto;
+	}
+.item {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin: 15px 0;
+	font-size: 18px;
+	color: #2C2C2C;
+	letter-spacing: 0.1px;
+}
+
+.item_name {
+	width: 70%;
+	font-family: "CircularBook";
+}
+
+.item_amount {
+	width: 30%;
+	text-align: right;
+	font-family: "CircularBold";
+}
+
+
+
 /* ==========================================================================
    3. Single recepie
    ========================================================================== */
+
+
 
 .single-recipe-name {
 	text-align: center;
@@ -537,7 +613,6 @@ letter-spacing: 0.1px;
 line-height: 22px;
 }
 
-
 /* ==========================================================================
    4. Mobile styles
    ========================================================================== */
@@ -590,8 +665,7 @@ line-height: 22px;
 	}
 	
 	.recipe-text {
-		margin-left: 10px;
-		
+		margin-left: 10px;	
 	}
 	
 	
@@ -648,6 +722,23 @@ line-height: 22px;
 	border-top: 1px solid #e3e3e3;
 	width: 98%;
 	margin: 0 auto;
+}
+	
+	
+	.shoppinglist {
+	width: 95%;
+	margin: 0 auto;
+	}
+
+.item_name {
+	width: 70%;
+	font-family: "CircularBook";
+}
+
+.item_amount {
+	width: 30%;
+	text-align: right;
+	font-family: "CircularBold";
 }
 	
 	
