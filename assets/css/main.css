@@ -15,6 +15,7 @@
     1.  Kitchen
 	2. 	Recepies grid
 	3.	Single recipe
+	4.	Mobile styles
  
 
 */
@@ -301,7 +302,7 @@ nav ul li a {
 
 .kitchen {
 	max-width: 840px;
-	font-family: "CircularStd-Medium", sans-serif;
+	font-family: "CircularStd-Book", sans-serif;
 	margin: 0 auto;
 }
 
@@ -438,6 +439,7 @@ line-height: 20px;
 	line-height: 56px;
 	max-width: 90%;
 	margin: 60px auto 30px;	
+	display: block;
 }
 
 .single-recipe-props {
@@ -451,6 +453,10 @@ line-height: 20px;
 .recipe-prop {
 	width: 33.3%;
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-flow: row wrap;
+	align-items: flex-start;
 }
 
 .prop-f {
@@ -491,6 +497,7 @@ line-height: 20px;
 
 .directions {
 	width: 65%;
+	margin-top: 0px;
 }
 
 .mr-names {
@@ -510,4 +517,120 @@ letter-spacing: 0.1px;
 line-height: 22px;
 }
 
+
+/* ==========================================================================
+   4. Mobile styles
+   ========================================================================== */
+
+@media only screen and (max-width: 700px) {
+	
+	.kitchen {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.intro {
+		margin: 50px auto;
+		font-size: 28px;
+		color: #181818;
+		letter-spacing: 0.61px;
+		line-height: 36px;
+		width: 95%;
+	}
+	
+	.start_link {
+		margin-left: 4%;
+		text-align: center;
+	}
+		
+	.breakfasts-grid {
+		display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 95%;
+	margin: 0 auto;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	}
+	
+	.breakfasts-grid a {
+		padding: 0;
+	}
+	
+	.recipe-name {
+		width: 100%;
+		padding: 0;
+		display: flex;
+		
+	}
+	
+	.recipe-cover {
+		width: 10%;
+		padding: 10%;
+	}
+	
+	.recipe-text {
+		margin-left: 10px;
+		
+	}
+	
+	
+	.single-recipe-name {
+		margin: 30px auto;
+		font-size: 28px;
+		color: #181818;
+		letter-spacing: 0.61px;
+		line-height: 30px;
+		width: 95%;
+		text-align: left;
+	}
+	
+	.single-recipe-props {
+		width: 90%;
+		margin: 20px auto;
+	}
+	
+	.recipe-prop {
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	text-align: center;
+	}
+	
+	.prop-f {
+		font-size: 13px;
+	}
+	
+	.prop-s {
+		font-size: 15px;
+	}
+	
+	.main-recipe {
+	display: block;
+	width: 90%;
+	margin: 20px auto 20px;
+}
+
+.ingredients {
+	width: 100%;
+	padding-right: 0px;
+}
+
+.directions {
+	width: 100%;
+	margin-top: 30px;
+}
+	
+	.site-footer {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #e3e3e3;
+	width: 98%;
+	font-family: "CircularStd", sans-serif;
+	margin: 0 auto;
+}
+	
+	
+}
 
