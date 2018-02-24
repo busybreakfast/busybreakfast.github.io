@@ -1,9 +1,10 @@
-name: Yuriy Shiryaev
+name: Busy breakfast
 description: Finacial graphic designer
 meta_description: "Finacial graphic designer based in Prague, Czech Republic. The most inspiration I find in meaningful, logical and reasonable design."
 
 markdown: kramdown
 highlighter: rouge
+github: [metadata]
 logo: true 
 paginate_path: "page:num"
 timezone: CZ
@@ -20,6 +21,7 @@ collections:
 url:            'http://yuriy.eu'
 author:         'Yuriy Shiryaev'
 twitter: 'yuriysteam'
+
 
 
 # Exclude from processing.
