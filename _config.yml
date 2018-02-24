@@ -14,7 +14,7 @@ plugins:
   - jekyll-feed
 paginate: 7
 collections: 
- projects:
+ breakfasts:
   output: true
 
 # Details for the RSS feed generator

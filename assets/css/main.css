@@ -13,6 +13,8 @@
 
     0.  Normalize
     1.  Kitchen
+	2. 	Recepies grid
+	3.	Single recipe
  
 
 */
@@ -248,7 +250,7 @@ a:hover {
 .main-header {
 	max-width: 840px;
 	margin: 20px auto;
-	height: 50px;
+	height: 40px;
 	font-family: "CircularStd-Book", sans-serif;
 	font-weight: 100;
 	border-bottom: 1px solid #e3e3e3;
@@ -314,7 +316,7 @@ nav ul li a {
 
 
 .intro {
-margin: 90px 0 20px;
+margin: 60px 0 20px;
 font-size: 46px;
 color: #181818;
 letter-spacing: 1px;
@@ -324,7 +326,7 @@ display:block;
 }
 
 .start_link {
-	margin-left: 70%;
+	margin-left: 68%;
 	font-family: "CircularStd-Bold";
 	font-size: 16px;
 	color: #FFFFFF;
@@ -336,7 +338,176 @@ display:block;
 }
 
 .site-footer {
+	margin-top: 60px;
+	padding-top: 20px;
+	border-top: 1px solid #e3e3e3;
 	max-width: 840px;
 	font-family: "CircularStd", sans-serif;
 	margin: 0 auto;
 }
+
+.footer-list {
+	max-width: 500px;
+	margin: 0 auto;
+	font-family: "CircularStd-Book";
+	font-size: 13px;
+	color: #6C6C6C;
+	letter-spacing: 0;
+}
+
+
+/* ==========================================================================
+   2. Recepies
+   ========================================================================== */
+
+.selector {
+	font-family: "CircularStd-Bold";
+	font-size: 13px;
+	color: #313131;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 30px auto 30px;
+	
+}
+
+.breakfasts-grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+
+.breakfasts-grid a {
+	text-decoration: none;
+	margin-bottom: 30px;
+	padding-right: 20px;
+}
+
+.breakfasts-grid a:hover {
+	text-decoration: underline;
+	margin-bottom: 30px;
+	padding-right: 20px;
+}
+
+.recipe-cover {
+	width: 100%;
+	padding-top: 80%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.recipe-name {
+	width: 22.5%;
+}
+
+.recipe-text {
+	margin-top: 10px;
+}
+
+.recipe-day {
+font-family: "CircularStd-Bold";
+font-size: 18px;
+color: #2C2C2C;
+letter-spacing: 0.11px;
+line-height: 24px;
+}
+
+.recipe-title {
+font-family: "CircularStd-Book";
+font-size: 16px;
+color: #767676;
+letter-spacing: 0;
+line-height: 20px;
+}
+
+/* ==========================================================================
+   3. Single recepie
+   ========================================================================== */
+
+.single-recipe-name {
+	text-align: center;
+	font-family: "CircularStd-Medium";
+	font-size: 46px;
+	color: #181818;
+	letter-spacing: 1px;
+	line-height: 56px;
+	max-width: 90%;
+	margin: 60px auto 30px;	
+}
+
+.single-recipe-props {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 70%;
+	margin: 0 auto 30px;
+}
+
+.recipe-prop {
+	width: 33.3%;
+	display: flex;
+}
+
+.prop-f {
+	font-family: "CircularStd-Book";
+	font-size: 15px;
+	color: #717171;
+	letter-spacing: 0;
+	padding-top: 1px;
+	padding-right: 2px; 
+}
+
+.prop-s {
+	font-family: "CircularStd-Medium";
+	font-size: 17px;
+	color: #181818;
+	letter-spacing: 0; 
+}
+
+.imgcover {
+	width: 100%;
+	height: 430px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.main-recipe {
+	display: flex;
+	width: 90%;
+	margin: 40px auto 30px;
+}
+
+.ingredients {
+	width: 28%;
+	padding-right: 80px;
+}
+
+.directions {
+	width: 65%;
+}
+
+.mr-names {
+	font-family: "CircularStd-Book";
+	font-size: 18px;
+	color: #8B8B8B;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.mr-text {
+margin-top: 30px;
+font-family: "CircularStd-Book";
+font-size: 18px;
+color: #2C2C2C;
+letter-spacing: 0.1px;
+line-height: 22px;
+}
+
+

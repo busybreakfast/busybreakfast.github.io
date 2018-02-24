@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<header class="main-header">
+    <nav class="main-nav clearfix">
+        <a class="back-button icon-arrow-left" href="{{ site.url }}/breakfasts">Back to breakfasts</a>
+        <!--<a class="logo" href="{{ site.url }}"> 
+                    <img src="/assets/images/logo.svg" alt="Blog Logo" />
+                </a> -->
+    </nav>
+</header>
+
+<div class="kitchen">
+	
+	
+	<h1 class="single-recipe-name">{{ page.title }}</h1>
+	<div class="single-recipe-props">
+		<div class="recipe-prop">
+			<div class="prop-f">Preparation:</div><div class="prop-p">{{ page.prep-t }}</div>
+		</div>
+		<div class="recipe-prop">
+			<div class="prop-f">Cooking:</div><div class="prop-p">{{ page.cooking-t }}</div>
+		</div>
+		<div class="recipe-prop">
+			<div class="prop-f">Calories:</div><div class="prop-p">{{ page.cal }}</div>
+		</div>	
+	</div>
+	
+	<div class="cover">
+		<div class="imgcover" style="background-image: url({{ page.cover }})"></div>
+		</div>
+	
+	<div class="main-recipe">
+		
+		<div class="ingredients">
+			<div class="mr-names">Ingredients</div>
+			<div class="mr-text">{{ page.ingredients }}</div>
+		</div>
+		<div class="directions">
+			<div class="mr-names">Directions</div>
+			<div class="mr-text">{{ page.directions }}</div>
+		</div>
+	</div>
+		
+		
+	</div>
+	
+	
+	
+	
+</div>
+	
+</main>
