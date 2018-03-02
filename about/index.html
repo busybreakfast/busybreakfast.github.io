@@ -1,0 +1,71 @@
+---
+layout: default
+title: Five minute breakfasts every week
+cover: false
+logo: true
+
+
+---
+
+<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+        {% if page.logo %}
+        <a class="logo" href="{{ site.url }}">
+            <img src="/assets/images/logo.svg" alt=" Logo" />
+        </a>
+        {% endif %}
+        <ul class="nav navbar-nav navbar-right">
+            {% for nav_item in site.data.nav %} {% if page.url == nav_item.link %}
+            <li class="active">
+                {% else %}
+                <li>
+                    {% endif %}
+                    <a href="{{ nav_item.link }}">{{ nav_item.name }}</a>
+                </li>
+                {% endfor %}
+        </ul>
+    </nav>
+</header>
+
+<div class="kitchen">
+
+<h1 class="intro">This week breakfasts</h1>
+	
+	<ul class="tabs">
+		<li class="tab-link current" data-tab="tab-1">All recipes</li>
+		<li class="tab-link" data-tab="tab-2">Shopping list</li>
+	</ul>
+		
+	
+
+<div id="tab-1" class="tab-content current">
+	<div class="breakfasts-grid tabbed-section-1 visible">
+    {% assign items = site.breakfasts | sort: 'date' %}
+  {% for item in items %}
+        
+        <a class="recipe-name" href="{{item.url}}">
+                <div class="recipe-cover" style="background-image: url({{ item.cover }})"></div>
+            <div class="recipe-text">
+				<div class="recipe-day">{{item.day}}</div>
+                <div class="recipe-title">{{item.title}}</div>
+            </div>  
+        </a>
+  {% endfor %}
+    </div>
+</div>
+
+<div id="tab-2" class="tab-content">
+	
+	<div class="shoppinglist">
+		
+		{% for shoppinglist_item in site.data.shoppinglist %}
+		
+		<div class="item">
+			<div class="item_name">{{ shoppinglist_item.name }}</div>
+			<div class="item_amount">{{ shoppinglist_item.amount }}</div>
+		</div>
+		{% endfor %}
+	
+	</div>
+	
+</div>

@@ -12,6 +12,7 @@ domain_name: 'https://busybreakfast.github.io'
 baseurl:
 plugins:
   - jekyll-feed
+
 paginate: 7
 collections: 
  breakfasts:
@@ -19,7 +20,6 @@ collections:
 
 author:         'Yuriy Shiryaev'
 twitter: 'yuriysteam'
-
 
 
 # Exclude from processing.
