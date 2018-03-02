@@ -5,9 +5,8 @@ layout: default
 <header class="main-header">
     <nav class="main-nav clearfix">
         <a class="back-button" href="{{ site.url }}/breakfasts"> < Back to breakfasts</a>
-        <!--<a class="logo" href="{{ site.url }}"> 
-                    <img src="/assets/images/logo.svg" alt="Blog Logo" />
-                </a> -->
+			
+        
     </nav>
 </header>
 
@@ -22,9 +21,9 @@ layout: default
 		<div class="recipe-prop">
 			<div class="prop-f">Cooking:</div><div class="prop-p">{{ page.cooking-t }}</div>
 		</div>
-		<!-- <div class="recipe-prop">
-			<div class="prop-f">Calories:</div><div class="prop-p">{{ page.cal }}</div>
-		</div>	-->
+		<div class="recipe-prop">
+			<div class="prop-f">Author:</div><div class="prop-p"><a href="http://{{ page.author_url }}" target="_blank">{{ page.author }}</a></div>
+		</div>
 	</div>
 	
 	<div class="cover">
