@@ -1,5 +1,13 @@
 $(document).ready(function(){
 	
+	
+	new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue.js!'
+  }
+})
+	
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
@@ -13,9 +21,3 @@ $(document).ready(function(){
 })
 
 
-new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue.js!'
-  }
-})
