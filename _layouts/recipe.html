@@ -4,7 +4,7 @@ layout: default
 
 <header class="main-header">
     <nav class="main-nav clearfix">
-        <a class="back-button" href="{{ site.url }}/breakfasts"> < Back to breakfasts</a>
+        <a class="navlink" class="back-button" href="{{ site.url }}/breakfasts"> < Back to breakfasts</a>
 			
         
     </nav>
@@ -22,13 +22,26 @@ layout: default
 			<div class="prop-f">Cooking:</div><div class="prop-p">{{ page.cooking-t }}</div>
 		</div>
 		<div class="recipe-prop">
-			<div class="prop-f">Author:</div><div class="prop-p"><a href="http://{{ page.author_url }}" target="_blank">{{ page.author }}</a></div>
+			<div class="prop-f">Calories:</div><div class="prop-p">{{ page.ccal }}</a></div>
 		</div>
 	</div>
 	
 	<div class="cover">
 		<div class="imgcover" style="background-image: url({{ page.cover }})"></div>
-		</div>
+			<div class="cover_info">
+				<div class="info-text">
+					<div class="info_author"><div class="info-text-prop">Recipe by:</div>
+					<a class="share-link" href="http://{{ page.author_url }}" target="_blank">{{ page.author }}</a>
+					</div>	
+					<div class="info_share">
+						<div class="info-text-share">Share</div>
+						<a class="share-link" href="https://twitter.com/home?status={{ site.url }}/{{ page.url }}" target="_blank">Twitter</a>
+						<a class="share-link" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}/{{ page.url }}" target="_blank">Facebook</a>
+						<a class="share-link" href="mailto:?&subject={{ page.title }}&body=Check this awesome recipe {{ site.url }}/{{ page.url }}" target="_blank">Email</a>
+					</div>	
+				</div>
+			</div>
+	</div>
 	
 	
 	<div class="main-recipe">
