@@ -7,14 +7,26 @@ logo: true
 
 ---
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
+<header class="main-header">
+    <nav class="main-nav">
         {% if page.logo %}
         <a class="logo" href="{{ site.url }}">
             <img src="/assets/images/logo.svg" alt="Logo" />
         </a>
         {% endif %}
-        <ul class="nav">
+		
+		
+		<nav role="navigation">
+			<div id="menuToggle">
+    
+				<input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+        
+			<ul id="menu">
             {% for nav_item in site.data.nav %} {% if page.url == nav_item.link %}
             <li class="active">
                 {% else %}
@@ -24,6 +36,7 @@ logo: true
                 </li>
                 {% endfor %}
         </ul>
+		</div>
     </nav>
 </header>
 
