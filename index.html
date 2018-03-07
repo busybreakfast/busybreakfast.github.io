@@ -8,36 +8,27 @@ logo: true
 ---
 
 <header class="main-header">
-    <nav class="main-nav">
-        {% if page.logo %}
-        <a class="logo" href="{{ site.url }}">
-            <img src="/assets/images/logo.svg" alt="Logo" />
-        </a>
-        {% endif %}
+	
+
+	
+	<a class="logo" href="{{ site.url }}"><img src="/assets/images/logo.svg" alt="Logo" /></a>
 		
+
 		
-		<nav role="navigation">
-			<div id="menuToggle">
-    
-				<input type="checkbox" />
-    
-    <span></span>
-    <span></span>
-    <span></span>
-    
-        
-			<ul id="menu">
+		<!--	<ul>
             {% for nav_item in site.data.nav %} {% if page.url == nav_item.link %}
-            <li class="active">
+            <li>
                 {% else %}
                 <li>
                     {% endif %}
                     <a class="navlink" href="{{ nav_item.link }}">{{ nav_item.name }}</a>
                 </li>
                 {% endfor %}
-        </ul>
-		</div>
-    </nav>
+        	</ul> -->
+	  <a class="start_button" href="{{ site.url }}/breakfasts">Get breakfasts</a>	
+	
+	</div>
+
 </header>
 
 
@@ -50,6 +41,13 @@ logo: true
 	<a class="start_link" href="/breakfasts">Try today for free</a>
 	<div class="front-image"></div>
 	
+	<div class="point">
+		<div class="point_text">
+		<h2>No time and hard to choose what's for breakfast?</h2>
+		<p class="point_body_text">We will help you to have a halthy meal for eachday of the week. Our recipe selection is  easy to cook and help you plan for future.</p>
+		</div>	
+		<div class="point_image"></div>
+	</div>
 	
   
 

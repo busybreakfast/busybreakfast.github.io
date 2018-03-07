@@ -9,21 +9,11 @@ logo: true
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
-        {% if page.logo %}
+        
         <a class="logo" href="{{ site.url }}">
             <img src="/assets/images/logo.svg" alt=" Logo" />
         </a>
-        {% endif %}
-        <ul class="nav navbar-nav navbar-right">
-            {% for nav_item in site.data.nav %} {% if page.url == nav_item.link %}
-            <li class="active">
-                {% else %}
-                <li>
-                    {% endif %}
-                    <a href="{{ nav_item.link }}">{{ nav_item.name }}</a>
-                </li>
-                {% endfor %}
-        </ul>
+        <a class="contrebute_button" href="{{ site.url }}/contrebute">Contrebute</a>
     </nav>
 </header>
 
@@ -69,3 +59,6 @@ logo: true
 	</div>
 	
 </div>
+
+	<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/main.js"></script>
